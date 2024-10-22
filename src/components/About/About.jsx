@@ -13,7 +13,7 @@ const About = forwardRef(function About({ aboutIsInView }, ref) {
             animate={{ x: "0px", opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
-            {`<> About Me </>`}
+            About
           </motion.h1>
           <div className="about_content_container">
             <motion.div
@@ -22,12 +22,39 @@ const About = forwardRef(function About({ aboutIsInView }, ref) {
               animate={{ y: "0px", opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <p>Tech Stack</p>
-              <p>Languages: HTML, CSS, JavaScript</p>
+              <div className="skills_item">
+                <img
+                  className="skills_img"
+                  src="https://benscott.dev/imgs/html.6aa56206be02cf6404844871df1d2da6.png"
+                />
+                <p>HTML</p>
+              </div>
+              <div className="skills_item">
+                <img
+                  className="skills_img"
+                  src="https://benscott.dev/imgs/css.0ce0f0a2b4c4aa34b64c40e5278af3d1.png"
+                />
+                <p>CSS</p>
+              </div>
+              <div className="skills_item">
+                <img
+                  className="skills_img"
+                  src="https://benscott.dev/imgs/js.f8a28e905c78dadb79434b7ceebd52a0.png"
+                />
+                <p>JAVASCRIPT</p>
+              </div>
+              <div className="skills_item">
+                <img
+                  className="skills_img"
+                  src="https://benscott.dev/imgs/react.cb15bfce2a9004ce61c5f79f805b067b.png"
+                />
+                <p>REACT</p>
+              </div>
+              {/* <p>Languages: HTML, CSS, JavaScript</p>
               <p>Frameworks: ReactJS, NodeJs, MongoDB, ExpressJS</p>
-              <p>Technologies: Redux, GitHub, FramerMotion</p>
+              <p>Technologies: Redux, GitHub, FramerMotion</p> */}
             </motion.div>
-            <motion.div
+            {/* <motion.div
               className="middle_about"
               initial={{ y: "-200px", opacity: 0 }}
               animate={{ y: "0px", opacity: 1 }}
@@ -40,17 +67,25 @@ const About = forwardRef(function About({ aboutIsInView }, ref) {
               <h1>Alejandro Gellada</h1>
               <p>alejandrogellada@gmail.com</p>
               <p>{`(+63) 917 555 5260`}</p>
-            </motion.div>
+            </motion.div> */}
             <motion.div
               className="right_about"
               initial={{ y: "-200px", opacity: 0 }}
               animate={{ y: "0px", opacity: 1 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
-              <p>Tech Stack</p>
-              <p>Languages: HTML, CSS, JavaScript</p>
-              <p>Frameworks: ReactJS, NodeJs, MongoDB, ExpressJS</p>
-              <p>Technologies: Redux, GitHub, FramerMotion</p>
+              <div className="right_about_text">
+                <p>
+                  Dedicated to the philosophy of life-long learning, I’m a
+                  front-end developer with a deep passion for JavaScript, React,
+                  and all things about web development. The unique blend of
+                  creativity, design, and technology fuels my excitement for
+                  crafting engaging web experiences. I thrive on the endless
+                  opportunities to innovate and explore new trends in front-end
+                  development. When I’m not coding, you can find me reading,
+                  staying active, or playing guitar.
+                </p>
+              </div>
             </motion.div>
           </div>
         </>

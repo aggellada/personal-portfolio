@@ -29,16 +29,22 @@ const LandingPage = forwardRef(function LandingPage(
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <h1>Hi, I am </h1>
-        <div>
-          <StaggerText>Alejandro</StaggerText>
-        </div>
-
-        <h3>a self-taught Web Developer.</h3>
         <p>
+          Hi, I'm <motion.span style={{ color: color }}>Alejandro</motion.span>.{" "}
+        </p>
+        <p>I am a self-taught Front End Developer.</p>
+        {/* <p>
           I craft websites that align with your brand and engage your audience –
           creating meaningful and memorable experiences.
-        </p>
+        </p> */}
+        <div>
+          <motion.button
+            className="view_work"
+            style={{ color: color, borderColor: color }}
+          >
+            View my work
+          </motion.button>
+        </div>
       </motion.div>
       <motion.div
         className="landing_content_two"

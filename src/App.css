@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  font-family: "Montserrat";
 }
 
 * {
@@ -43,15 +44,21 @@ html {
 .header {
   width: 100%;
   background: transparent;
-  height: 50px;
+  height: 75px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header_intersected {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 50px;
+  height: 75px;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .nav-img {
@@ -65,32 +72,45 @@ html {
 
 .navigation_ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
-  gap: 2rem;
+  gap: 100px;
   height: 50px;
+  margin-right: 100px;
 }
 
 .navigation_ul a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* --------- LANDING PAGE --------- */
 
 .landing_content_one {
-  flex-basis: 60%;
+  flex-basis: 70%;
   display: flex;
   flex-direction: column;
   padding: 0 200px;
   /* justify-content: center; */
   /* align-items: center; */
   color: white;
+  font-size: 45px;
+  gap: 20px;
+  text-align: center;
 }
 
 .landing_content_two {
-  flex-basis: 40%;
+  flex-basis: 30%;
+}
+
+.view_work {
+  padding: 20px;
+  width: 250px;
+  font-size: 24px;
+  background-color: transparent;
+  color: white;
 }
 
 .stagger_layout {
@@ -117,7 +137,7 @@ html {
 .stagger2 {
   display: flex;
   position: absolute;
-  inset: 0px;
+  inset: -0px;
 }
 
 /* ------------ PROJECTS ------------- */
@@ -155,20 +175,51 @@ html {
 
 /* --------- ABOUT ME -------------- */
 .about_content_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  width: 100%;
+  height: 100%;
   color: white;
 }
 
 .left_about,
-.middle_about,
+.right_about {
+  flex-basis: 50%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* flex-direction: column; */
+}
+
+.left_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
 .right_about {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
-  padding-top: 30px;
+}
+
+.right_about_text {
+  width: 80%;
+  font-size: 24px;
+}
+
+.skills_item {
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.skills_img {
+  width: 100px;
+  height: 100px;
 }
 
 .info_content_container {

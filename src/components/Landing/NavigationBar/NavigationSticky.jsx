@@ -11,9 +11,9 @@ export default function NavigationSticky({ color }) {
     >
       <nav>
         <ul className="navigation_ul">
-          <NavigationItem bgColor={color}>About</NavigationItem>
+          <NavigationItem bgColor={color}>Home</NavigationItem>
           <NavigationItem bgColor={color}>Projects</NavigationItem>
-          <NavigationItem bgColor={color}>Experience</NavigationItem>
+          <NavigationItem bgColor={color}>About</NavigationItem>
           <NavigationItem bgColor={color}>Contact</NavigationItem>
         </ul>
       </nav>

@@ -11,11 +11,11 @@ export default function Navigation({ color, showModal }) {
     >
       <nav>
         <ul className="navigation_ul">
-          <NavigationItem bgColor={color}>About</NavigationItem>
+          <NavigationItem bgColor={color}>Home</NavigationItem>
           <NavigationItem bgColor={color}>Projects</NavigationItem>
-          <NavigationItem bgColor={color}>Experience</NavigationItem>
+          <NavigationItem bgColor={color}>About</NavigationItem>
           <NavigationItem bgColor={color}>Contact</NavigationItem>
-          <button onClick={showModal}>Show Modal</button>
+          {/* <button onClick={showModal}>Show Modal</button> */}
         </ul>
       </nav>
     </motion.header>

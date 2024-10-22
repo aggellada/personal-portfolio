@@ -71,8 +71,9 @@ function App() {
         backgroundImage={backgroundImageTwo}
         projectsIsInView={projectsIsInView}
       />
-      <Info ref={infoRef} infoIsInView={infoIsInView} />
       <About ref={aboutRef} aboutIsInView={aboutIsInView} />
+
+      <Info ref={infoRef} infoIsInView={infoIsInView} />
       <Modal ref={modal} closeModal={closeModal} />
     </>
   );
