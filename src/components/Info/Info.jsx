@@ -66,7 +66,7 @@ const Info = forwardRef(function Info({ infoIsInView }, ref) {
                     <h1>[03]</h1>
                   </div>
                   <div>
-                    <h1>Animation & interaction</h1>
+                    <h1>Animation & Interaction</h1>
                   </div>
                   <div>
                     Animation and interaction breathe life into digital

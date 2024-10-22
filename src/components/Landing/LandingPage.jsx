@@ -43,12 +43,14 @@ const LandingPage = forwardRef(function LandingPage(
           creating meaningful and memorable experiences.
         </p> */}
         <div>
-          <motion.button
-            className="view_work"
-            style={{ color: color, borderColor: color }}
-          >
-            View my work
-          </motion.button>
+          <a href="#Projects">
+            <motion.button
+              className="view_work"
+              style={{ color: color, borderColor: color }}
+            >
+              View my work
+            </motion.button>
+          </a>
         </div>
       </motion.div>
       <motion.div

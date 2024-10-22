@@ -44,7 +44,7 @@ html {
 .header {
   width: 100%;
   background: transparent;
-  height: 75px;
+  height: 65px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ html {
 .header_intersected {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 75px;
+  height: 65px;
   position: fixed;
   display: flex;
   align-items: center;
@@ -111,6 +111,7 @@ html {
   font-size: 24px;
   background-color: transparent;
   color: white;
+  cursor: pointer;
 }
 
 .stagger_layout {
@@ -193,16 +194,24 @@ html {
 
 .left_about {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding-top: 150px;
 }
 
 .right_about {
+  padding-top: 225px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.skills_item_group {
+  display: flex;
+  gap: 100px;
+  width: 100%;
+  justify-content: center;
 }
 
 .right_about_text {
