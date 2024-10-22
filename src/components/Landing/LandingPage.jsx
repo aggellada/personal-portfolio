@@ -23,7 +23,6 @@ const LandingPage = forwardRef(function LandingPage(
       style={{ backgroundImage }}
       id="Home"
     >
-      <div className="landing_content_container"></div>
       <motion.div
         className="landing_content_one"
         style={{ overflowX: "hidden" }}
@@ -62,10 +61,7 @@ const LandingPage = forwardRef(function LandingPage(
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <img
-          src={AlejandroPic}
-          style={{ width: "70%", borderRadius: "200px" }}
-        />
+        <img src={AlejandroPic} className="alejandro_picture" />
       </motion.div>
     </motion.div>
   );
