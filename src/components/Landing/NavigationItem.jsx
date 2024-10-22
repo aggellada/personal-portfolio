@@ -57,6 +57,7 @@ export default function NavigationItem({ children, bgColor }) {
               }}
               className="stagger1"
               key={i}
+              href={`#${children}`}
             >
               {l}
             </motion.a>

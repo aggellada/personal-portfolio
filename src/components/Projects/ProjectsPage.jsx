@@ -22,7 +22,7 @@ const ProjectsPage = forwardRef(function ProjectsPage(
         ref={ref}
         className="landing_page"
         style={{ backgroundImage, backgroundSize: "cover" }}
-        id="projects"
+        id="Projects"
       >
         <div ref={ref} className="projects_page">
           {projectsIsInView && (

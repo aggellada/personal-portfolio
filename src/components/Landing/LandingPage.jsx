@@ -17,7 +17,12 @@ const LandingPage = forwardRef(function LandingPage(
   }, []);
 
   return (
-    <motion.div ref={ref} className="landing_page" style={{ backgroundImage }}>
+    <motion.div
+      ref={ref}
+      className="landing_page"
+      style={{ backgroundImage }}
+      id="Home"
+    >
       <div className="landing_content_container"></div>
       <motion.div
         className="landing_content_one"

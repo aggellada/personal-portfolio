@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About = forwardRef(function About({ aboutIsInView }, ref) {
   return (
-    <div ref={ref} className="about_page">
+    <div ref={ref} className="about_page" id="About">
       {aboutIsInView && (
         <>
           <motion.h1
