@@ -3,7 +3,6 @@ import "./App.css";
 import LandingPage from "./components/Landing/LandingPage";
 import Navigation from "./components/Landing/Navigation";
 import ProjectsPage from "./components/Projects/ProjectsPage";
-
 import { useMotionTemplate, useMotionValue, useInView } from "framer-motion";
 import NavigationSticky from "./components/Landing/NavigationBar/NavigationSticky";
 import Modal from "./components/Modal/Moda";
@@ -72,7 +71,6 @@ function App() {
         projectsIsInView={projectsIsInView}
       />
       <About ref={aboutRef} aboutIsInView={aboutIsInView} />
-
       <Info ref={infoRef} infoIsInView={infoIsInView} />
       <Modal ref={modal} closeModal={closeModal} />
     </>
