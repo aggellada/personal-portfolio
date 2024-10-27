@@ -319,3 +319,29 @@ html {
     font-size: 24px;
   }
 }
+
+@media (max-width: 425px) {
+  .project_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .project_item h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .project_item img {
+    object-fit: fill;
+    width: 300px;
+    height: 150px;
+  }
+
+  .projects_container {
+    gap: 50px;
+  }
+}
