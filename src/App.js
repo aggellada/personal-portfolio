@@ -71,7 +71,7 @@ function App() {
         projectsIsInView={projectsIsInView}
       />
       <About ref={aboutRef} aboutIsInView={aboutIsInView} />
-      <Info ref={infoRef} infoIsInView={infoIsInView} />
+      {/* <Info ref={infoRef} infoIsInView={infoIsInView} /> */}
       <Modal ref={modal} closeModal={closeModal} />
     </>
   );
